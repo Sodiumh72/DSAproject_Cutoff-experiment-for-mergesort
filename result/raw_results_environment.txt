@@ -1,0 +1,32 @@
+=== BENCHMARK ENVIRONMENT ===
+Status                 : COMPLETED
+Start time             : 2026-11-18T14:18:14.4790683+07:00
+End time               : 2026-11-18T14:57:40.7523001+07:00
+Total elapsed (s)       : 2366.3
+
+--- Hardware (reference, user-provided) ---
+Intel Core i7-6600U, 2 cores / 4 threads, 8 GB RAM (experimental machine specs provided by the user, not retrieved from JVM/OS)
+
+--- OS / JVM (retrieved at runtime) ---
+os.name                : Windows 10
+os.version             : 10.0
+os.arch                : amd64
+java.version           : 26
+java.vendor            : BellSoft
+java.vm.name           : OpenJDK 64-Bit Server VM
+java.vm.version        : 26+37
+availableProcessors    : 4
+Runtime.maxMemory()    : 4294967296 bytes (4096 MB)
+JVM input arguments    : [-Xms2g, -Xmx4g, -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2025.3.3\lib\idea_rt.jar=51444, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8]
+
+--- Experiment configuration ---
+Algorithm              : MergeWithCutoff (baseline cutoff = 0)
+SHUFFLE_SEED           : 20261117
+CUTOFFS                : [0, 2, 4, 5, 6, 7, 8, 9, 10, 12, 16, 20, 24, 32, 40, 48, 64, 96, 128]
+Global warm-up         : 3 pass(es) over all CUTOFFS, random array n=50000, seed=20261118
+Local warm-up          : 1 pass(es) over all CUTOFFS per dataset (not recorded)
+Adaptive reps          : size <= 10000 -> 25; size <= 500000 -> 15; size > 500000 -> 8
+Execution              : single-threaded; CUTOFFS order reshuffled every rep
+Total datasets         : 48
+Raw results file       : raw_results.csv
+Summary file           : summary.csv
