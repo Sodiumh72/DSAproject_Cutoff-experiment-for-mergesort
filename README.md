@@ -77,3 +77,7 @@ python script/analyze.py                :: phân tích, ghi result/analysis/
 **Phân tích lại từ số liệu có sẵn (không cần chạy lại benchmark):** `python script/analyze.py` (mặc định `--min-size 1000`, `--tol 0.02`; dùng `--input` để chỉ định file raw khác).
 
 **Kiểm chứng:** so sánh `result/analysis/overall_cutoff.csv` và `best_cutoff.csv` với kết quả ở mục 5. Thời gian tuyệt đối sẽ khác theo máy, nhưng hình dạng đường cong (đáy phẳng ở 12–32 cho random, K lớn cho sorted, K nhỏ cho reverse) cần giống nhau.
+
+## 8. Phạm vi thực hiện và sử dụng công cụ AI
+
+Em tự thực hiện việc cài đặt MergeSort, Insertion Sort và Hybrid MergeSort (`MergeWithCutoff`) dựa trên nội dung bài giảng; đồng thời xây dựng câu hỏi nghiên cứu, lựa chọn phạm vi giá trị CUTOFF và phân tích, diễn giải kết quả thực nghiệm. Công cụ AI đã được sử dụng để thảo luận hướng đi và hỗ trợ xây dựng các thành phần phục vụ thí nghiệm, bao gồm `Test.java`, `DataGenerator.java`, `Benchmark.java`, `run_experiment.bat` và `analyze.py`, thông qua prompt. Em trực tiếp chạy thử, kiểm tra và sử dụng các thành phần này trên máy tính. Các nội dung còn lại được thực hiện dựa trên kiến thức đã học trong môn học và tài liệu tham khảo trên Youtube, ResearchGate, ... do em tự tìm hiểu.
